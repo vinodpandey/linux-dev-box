@@ -22,9 +22,9 @@ Softwares Included
    Location: /var/www/html  
    Log: /etc/httpd/logs (error_log, access_log)  
    sudo /etc/init.d/httpd restart
-3. Vhost with ProxyPass (for gunicorn with django on a port 8000)
-    URL: example.com
-    Mapping: / - http://localhost:8000
+3. Vhost with ProxyPass (for gunicorn with django on a port 8000)  
+    URL: example.com  
+    Mapping: / - http://localhost:8000  
 4. Git
 5. phpMyadmin
    URL: http://192.168.33.10/phpmyadmin/
