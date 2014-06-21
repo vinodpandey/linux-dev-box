@@ -21,19 +21,21 @@ Softwares Included
    URL: http://192.168.33.10/  
    Location: /var/www/html  
    Log: /etc/httpd/logs (error_log, access_log)  
-   sudo /etc/init.d/httpd restart  
-3. Git  
-4. phpMyadmin  
-   URL: http://192.168.33.10/phpmyadmin/  
+   sudo /etc/init.d/httpd restart
+3. Vhost with ProxyPass (for gunicorn with django on a port 8000)
+    URL: example.com
+    Mapping: / - http://localhost:8000
+4. Git
+5. phpMyadmin
+   URL: http://192.168.33.10/phpmyadmin/
    Credentials: root/vagrant  
-5. Python 2.7.3, PIP, Virtualenv  
-	python2.7 - /usr/local/bin/python2.7 - /usr/bin/python2.7  
+6. Python 2.7.3, PIP, Virtualenv
+	python2.7 - /usr/local/bin/python2.7 - /usr/bin/python2.7
 	pip2.7 - /usr/local/bin/pip2.7 - /usr/bin/pip2.7  
 	virtualenv-2.7 - /usr/local/bin/virtualenv-2.7 - /usr/bin/virtualenv-2.7  
 
 
-Optional  
-6.   
+
 
 
 

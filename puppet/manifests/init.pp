@@ -14,9 +14,17 @@ class { '::mysql::server':
 
 # apache
 class {'apache':}
-apache::mod { 'proxy': }
-apache::mod { 'proxy_http': }
+#apache::mod { 'proxy': }
+#apache::mod { 'proxy_http': }
 include apache::mod::php
+
+apache::vhost { 'example.com':
+  port    => '80',
+  docroot => '/var/www/html',
+  proxy_pass => [
+   { 'path' => '/', 'url' => 'http://localhost:8000/' },
+  ]
+}
 
 #php
 php::ini { '/etc/php.ini':
@@ -59,5 +67,11 @@ class phpmyadmin {
 include phpmyadmin
 
 
-
+#proxy pass
+#apache::vhost { 'loc.test':
+#  docroot     => '/var/www/html',
+#  proxy_pass => [
+#   { 'path' => '/a', 'url' => 'http://localhost:8000/' },
+#  ],
+#}
 
