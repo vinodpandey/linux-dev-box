@@ -43,4 +43,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.module_path    = "puppet/modules"
   end
 
+  config.vm.provision :shell, :path => "puppet/scripts/python.sh"
+
 end
