@@ -29,8 +29,8 @@ Softwares Included
 5. phpMyadmin
    URL: http://192.168.33.10/phpmyadmin/
    Credentials: root/vagrant  
-6. Python 2.7.3, PIP, Virtualenv
-	python2.7 - /usr/local/bin/python2.7 - /usr/bin/python2.7
+6. Python 2.7.3, PIP, Virtualenv  
+	python2.7 - /usr/local/bin/python2.7 - /usr/bin/python2.7  
 	pip2.7 - /usr/local/bin/pip2.7 - /usr/bin/pip2.7  
 	virtualenv-2.7 - /usr/local/bin/virtualenv-2.7 - /usr/bin/virtualenv-2.7  
 
