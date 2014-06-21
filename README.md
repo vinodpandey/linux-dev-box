@@ -26,8 +26,8 @@ Softwares Included
     URL: example.com  
     Mapping: / - http://localhost:8000  
 4. Git
-5. phpMyadmin
-   URL: http://192.168.33.10/phpmyadmin/
+5. phpMyadmin  
+   URL: http://192.168.33.10/phpmyadmin/  
    Credentials: root/vagrant  
 6. Python 2.7.3, PIP, Virtualenv  
 	python2.7 - /usr/local/bin/python2.7 - /usr/bin/python2.7  
