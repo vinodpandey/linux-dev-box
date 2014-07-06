@@ -8,7 +8,7 @@ PYTHON_VER_MAJOR=${VER[0]}.${VER[1]}
 # check python version, if version 2.7.3 not present, install it
 if [[ $(python$PYTHON_VER_MAJOR -c 'import sys; print(".".join(map(str, sys.version_info[:3])))') != $PYTHON_VER_MAJOR.* ]]; then
     echo "Installing Python $PYTHON_VER"
-    sudo yum -y install zlib zlib-devel gcc httpd-devel bzip2-devel
+    sudo yum -y install zlib zlib-devel gcc httpd-devel bzip2-devel sqlite-devel ncurses-devel
     mkdir -p ~/temp
     cd ~/temp
     wget --no-check-certificate http://www.python.org/ftp/python/$PYTHON_VER/Python-$PYTHON_VER.tgz
